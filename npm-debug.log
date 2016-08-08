@@ -1,0 +1,140 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install', 'bootstrap' ]
+2 info using npm@3.10.5
+3 info using node@v4.4.7
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData bootstrap
+8 silly fetchNamedPackageData bootstrap
+9 silly mapToRegistry name bootstrap
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'bootstrap',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'bootstrap',
+12 silly mapToRegistry   name: 'bootstrap',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/bootstrap
+14 verbose request uri https://registry.npmjs.org/bootstrap
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 12:00:12 AM
+17 verbose request id f13cb33947dfb215
+18 verbose etag "2UKRGPF9K8KH3I1VYC4PCIDK7"
+19 http request GET https://registry.npmjs.org/bootstrap
+20 http 304 https://registry.npmjs.org/bootstrap
+21 verbose headers { date: 'Fri, 05 Aug 2016 05:00:12 GMT',
+21 verbose headers   via: '1.1 varnish',
+21 verbose headers   'cache-control': 'max-age=300',
+21 verbose headers   etag: '"2UKRGPF9K8KH3I1VYC4PCIDK7"',
+21 verbose headers   age: '0',
+21 verbose headers   connection: 'keep-alive',
+21 verbose headers   'x-served-by': 'cache-iad2628-IAD',
+21 verbose headers   'x-cache': 'HIT',
+21 verbose headers   'x-cache-hits': '1',
+21 verbose headers   'x-timer': 'S1470373212.447310,VS0,VE397',
+21 verbose headers   vary: 'Accept-Encoding' }
+22 silly get cb [ 304,
+22 silly get   { date: 'Fri, 05 Aug 2016 05:00:12 GMT',
+22 silly get     via: '1.1 varnish',
+22 silly get     'cache-control': 'max-age=300',
+22 silly get     etag: '"2UKRGPF9K8KH3I1VYC4PCIDK7"',
+22 silly get     age: '0',
+22 silly get     connection: 'keep-alive',
+22 silly get     'x-served-by': 'cache-iad2628-IAD',
+22 silly get     'x-cache': 'HIT',
+22 silly get     'x-cache-hits': '1',
+22 silly get     'x-timer': 'S1470373212.447310,VS0,VE397',
+22 silly get     vary: 'Accept-Encoding' } ]
+23 verbose etag https://registry.npmjs.org/bootstrap from cache
+24 verbose get saving bootstrap to /home/bijay/.npm/registry.npmjs.org/bootstrap/.cache.json
+25 verbose correctMkdir /home/bijay/.npm correctMkdir not in flight; initializing
+26 silly install normalizeTree
+27 silly loadCurrentTree Finishing
+28 silly loadIdealTree Starting
+29 silly install loadIdealTree
+30 silly cloneCurrentTree Starting
+31 silly install cloneCurrentTreeToIdealTree
+32 silly cloneCurrentTree Finishing
+33 silly loadShrinkwrap Starting
+34 silly install loadShrinkwrap
+35 silly loadShrinkwrap Finishing
+36 silly loadAllDepsIntoIdealTree Starting
+37 silly install loadAllDepsIntoIdealTree
+38 silly resolveWithNewModule bootstrap@3.3.7 checking installable status
+39 silly cache add args [ 'bootstrap', null ]
+40 verbose cache add spec bootstrap
+41 silly cache add parsed spec Result {
+41 silly cache add   raw: 'bootstrap',
+41 silly cache add   scope: null,
+41 silly cache add   escapedName: 'bootstrap',
+41 silly cache add   name: 'bootstrap',
+41 silly cache add   rawSpec: '',
+41 silly cache add   spec: 'latest',
+41 silly cache add   type: 'tag' }
+42 silly addNamed bootstrap@latest
+43 verbose addNamed "latest" is being treated as a dist-tag for bootstrap
+44 info addNameTag [ 'bootstrap', 'latest' ]
+45 silly mapToRegistry name bootstrap
+46 silly mapToRegistry using default registry
+47 silly mapToRegistry registry https://registry.npmjs.org/
+48 silly mapToRegistry data Result {
+48 silly mapToRegistry   raw: 'bootstrap',
+48 silly mapToRegistry   scope: null,
+48 silly mapToRegistry   escapedName: 'bootstrap',
+48 silly mapToRegistry   name: 'bootstrap',
+48 silly mapToRegistry   rawSpec: '',
+48 silly mapToRegistry   spec: 'latest',
+48 silly mapToRegistry   type: 'tag' }
+49 silly mapToRegistry uri https://registry.npmjs.org/bootstrap
+50 verbose addNameTag registry:https://registry.npmjs.org/bootstrap not in flight; fetching
+51 verbose get https://registry.npmjs.org/bootstrap not expired, no request
+52 silly addNameTag next cb for bootstrap with tag latest
+53 silly addNamed bootstrap@3.3.7
+54 verbose addNamed "3.3.7" is a plain semver version for bootstrap
+55 silly cache afterAdd bootstrap@3.3.7
+56 verbose afterAdd /home/bijay/.npm/bootstrap/3.3.7/package/package.json not in flight; writing
+57 verbose correctMkdir /home/bijay/.npm correctMkdir not in flight; initializing
+58 verbose afterAdd /home/bijay/.npm/bootstrap/3.3.7/package/package.json written
+59 silly loadAllDepsIntoIdealTree Finishing
+60 silly loadIdealTree Finishing
+61 silly currentTree mysite
+61 silly currentTree └── bootstrap@3.3.7
+62 silly idealTree mysite
+62 silly idealTree └── bootstrap@3.3.7
+63 silly generateActionsToTake Starting
+64 silly install generateActionsToTake
+65 warn checkPermissions Missing write access to /home/bijay/Desktop/django/mysite/node_modules
+66 silly rollbackFailedOptional Starting
+67 silly rollbackFailedOptional Finishing
+68 silly runTopLevelLifecycles Starting
+69 silly runTopLevelLifecycles Finishing
+70 silly install printInstalled
+71 warn enoent ENOENT: no such file or directory, open '/home/bijay/Desktop/django/mysite/package.json'
+72 warn mysite No description
+73 warn mysite No repository field.
+74 warn mysite No README data
+75 warn mysite No license field.
+76 verbose stack Error: EACCES: permission denied, access '/home/bijay/Desktop/django/mysite/node_modules'
+76 verbose stack     at Error (native)
+77 verbose cwd /home/bijay/Desktop/django/mysite
+78 error Linux 3.19.0-65-generic
+79 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install" "bootstrap"
+80 error node v4.4.7
+81 error npm  v3.10.5
+82 error path /home/bijay/Desktop/django/mysite/node_modules
+83 error code EACCES
+84 error errno -13
+85 error syscall access
+86 error Error: EACCES: permission denied, access '/home/bijay/Desktop/django/mysite/node_modules'
+86 error     at Error (native)
+86 error  { [Error: EACCES: permission denied, access '/home/bijay/Desktop/django/mysite/node_modules']
+86 error   errno: -13,
+86 error   code: 'EACCES',
+86 error   syscall: 'access',
+86 error   path: '/home/bijay/Desktop/django/mysite/node_modules' }
+87 error Please try running this command again as root/Administrator.
+88 verbose exit [ -13, true ]
